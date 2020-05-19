@@ -39,7 +39,7 @@ export default {
     /* module options */
     customVariables: ["~/assets/variables.scss"],
     optionsPath: "./vuetify.options.js"
-  },
+  }, 
 
   /*
   ** Nuxt.js modules
