@@ -19,6 +19,11 @@
          <hr class="divider">
          <h2>What We Do ?</h2>
        </div>
+       <v-row>
+         <v-col cols="12" md="6" sm="12" xs="12" v-for="service in services" :key="service.title">
+           <Blurb size="100" :title="service.title" :description="service.description" :image="service.image" />
+         </v-col>
+       </v-row>
      </div>
     </v-container>
 
@@ -26,15 +31,40 @@
 
 <script>
 import Logo from '~/components/Logo.vue'
+import Blurb from '~/components/Blurb.vue'
 
 export default {
   components: {
-    Logo
+    Logo,
+    Blurb
   },
   data(){
     return{
       title: "Foxflue Network",
-      description: "We make websites for awesome business like yours. Let us help you to make your brand online."
+      description: "We make websites for awesome business like yours. Let us help you to make your brand online.",
+      services: [
+        {
+          image: "https://foxflue.com/wp-content/uploads/2020/03/website-design-development.png",
+          title: "Web Development",
+          description: "Combining detailed planning with user-centric designs, Team Foxflue deliver digital experiences that enhance conversions and engagement."
+        },
+        {
+          image: "https://foxflue.com/wp-content/uploads/2020/03/search-engine-optimization.png",
+          title: "Digital Marketing",
+          description: "As a SEO, web design and development Google certified agency, we create digital marketing, SEO and paid ad (PPC) strategies that deliver industry-leading returns."
+        },
+        {
+          image: "https://foxflue.com/wp-content/uploads/2020/03/logo-design-and-brand-design.png",
+          title: "Logo Design & Branding",
+          description: "Graphic designing is a very useful thing when it comes to making something more expressive. To paraphrase an old proverb ’A picture speaks a thousand words'"
+        },
+        {
+          image: "https://foxflue.com/wp-content/uploads/2020/03/mobile-application-development.png",
+          title: "Apps Development",
+          description: "By blending aesthetics and functionality our Foxflue Team and iOS and Android app development team creates mobile applications that stand out in the competitive mobile space."
+        },
+
+      ]
     }
   },
   head(){
@@ -72,6 +102,7 @@ export default {
 .content-area{
   padding: 5% 0;
   &-title{
+    margin-bottom: 30px;
     h2{
       font-size: 2rem;
     }
