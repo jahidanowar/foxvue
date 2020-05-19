@@ -11,5 +11,6 @@ export default {
         error: '#b71c1c',
       },
     },
+    
   }
 };
