@@ -15,10 +15,7 @@
        </v-row>
      </div>
      <div class="content-area">
-       <div class="content-area-title text-center">
-         <hr class="divider">
-         <h2>What We Do ?</h2>
-       </div>
+       <Heading title="What We Do ?" height="5" />
        <v-row>
          <v-col cols="12" md="6" sm="12" xs="12" v-for="service in services" :key="service.title">
            <Blurb size="100" :title="service.title" :description="service.description" :image="service.image" />
@@ -32,11 +29,13 @@
 <script>
 import Logo from '~/components/Logo.vue'
 import Blurb from '~/components/Blurb.vue'
+import Heading from '~/components/Heading'
 
 export default {
   components: {
     Logo,
-    Blurb
+    Blurb,
+    Heading
   },
   data(){
     return{
@@ -83,12 +82,6 @@ export default {
 </script>
 
 <style lang="scss">
-.divider{
-  border: 3px solid #f68c1c;
-  width: 50px;
-  margin: 0 auto;
-  margin-bottom: 10px;
-}
 .header{
   &-title{
     font-size: 3.5rem;
@@ -101,11 +94,5 @@ export default {
 }
 .content-area{
   padding: 5% 0;
-  &-title{
-    margin-bottom: 30px;
-    h2{
-      font-size: 2rem;
-    }
-  }
 }
 </style>
