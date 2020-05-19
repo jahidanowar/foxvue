@@ -9,7 +9,7 @@
             <v-toolbar-title>
                 <v-img 
                 src="https://foxflue.com/wp-content/uploads/2020/03/foxflue-logo.png"
-                width="120"
+                width="150"
                     >  
                 </v-img>
             </v-toolbar-title>
