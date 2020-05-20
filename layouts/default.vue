@@ -4,15 +4,18 @@
     <v-content>
       <Nuxt />
     </v-content>
+    <PageFooter />
   </v-app>
 </template>
 
 <script>
-import Appbar from '../components/Appbar'
+import Appbar from '~/components/Appbar'
+import PageFooter from '~/components/PageFooter'
 
 export default {
   components:{
-    Appbar
+    Appbar,
+    PageFooter,
   }
 }
 </script>
