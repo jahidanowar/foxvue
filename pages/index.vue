@@ -63,8 +63,14 @@
     <div class="content-area">
        <Heading title="What Clients Say About Us" :height="5" />
        <v-row>
-         <v-col cols="12" md="4" sm="6">
-           
+         <v-col cols="12" md="4" sm="6" v-for="testimonial in testimonials" :key="testimonial.name">
+           <Testimonial 
+           :name="testimonial.name" 
+           :avatar="testimonial.avatar"
+           :designation="testimonial.designation" 
+           > 
+           "{{testimonial.review}}"
+           </Testimonial>
          </v-col>
        </v-row>
      </div>
@@ -79,12 +85,14 @@
 import Logo from '~/components/Logo.vue'
 import Blurb from '~/components/Blurb.vue'
 import Heading from '~/components/Heading'
+import Testimonial from '~/components/Testimonial'
 
 export default {
   components: {
     Logo,
     Blurb,
-    Heading
+    Heading,
+    Testimonial
   },
   data(){
     return{
@@ -117,17 +125,20 @@ export default {
         {
           name: "Jaideep Hinduja",
           designation: "Director, SimexT",
-          review: "",
+          avatar: "https://jahid.dev/wp-content/uploads/2020/04/hasan-alkhater.jpg",
+          review: "They understands the requirements quite well, and implementation is praiseworthy. They puts in their minds and gives real good practical suggestions. Would surely work on more projects with Foxflue in future.",
         },
         {
-          name: "Jaideep Hinduja",
-          designation: "Director, SimexT",
-          review: "",
+          name: "Thomas Chris",
+          designation: "Owner, BrosMobileParts",
+          avatar: "https://jahid.dev/wp-content/uploads/2020/04/hasan-alkhater.jpg",
+          review: "I really like working with Foxflue. They have a lot of experience with WordPress, are friendly and doesn’t stop working until you are completely satisfied with the result. 5 well-deserved stars",
         },
         {
-          name: "Jaideep Hinduja",
-          designation: "Director, SimexT",
-          review: "",
+          name: "Dulen Scevnder",
+          designation: "Director, BanomeKoffie",
+          avatar: "https://jahid.dev/wp-content/uploads/2020/04/hasan-alkhater.jpg",
+          review: "Jahid took time to understand the requirements and finished before the deadline set. His task was to create a multi-lingual landing page with automatic language change based on location, and he did it successfully in a timely manne",
         }
       ],
     }

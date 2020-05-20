@@ -1,11 +1,11 @@
 <template>
-    <v-card color="#fafafa" flat>
-        <p class="pa-5 font-weight-bold">
-        "<slot></slot>"
+    <v-card color="#fafafa" flat min-height="280">
+        <p class="pa-5">
+        <slot></slot>
         </p>
         <v-card-actions>
         <v-list-item class="grow">
-        <v-list-item-avatar color="grey darken-3">
+        <v-list-item-avatar>
             <v-img
             class="elevation-6"
             :src="avatar"
@@ -13,7 +13,7 @@
         </v-list-item-avatar>
 
         <v-list-item-content>
-            <v-list-item-title>{{name}}, {{designation}}</v-list-item-title>
+            <v-list-item-title>{{name}} <br> <span class="caption">{{designation}}</span></v-list-item-title>
         </v-list-item-content>
 
         </v-list-item>
