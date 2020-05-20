@@ -9,6 +9,14 @@ export default {
         secondary: '#b0bec5',
         accent: '#8c9eff',
         error: '#b71c1c',
+        bg: '#fff',
+      },
+      dark: {
+        primary: '#F68C1C',
+        secondary: '#b0bec5',
+        accent: '#8c9eff',
+        error: '#b71c1c',
+        bg: '#333',
       },
     },
     

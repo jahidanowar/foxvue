@@ -22,19 +22,19 @@
   <v-container fluid class="primary">
     <v-container>
       <v-row>
-        <v-col md="4">
+        <v-col md="4" sm="12" cols="12" xs="12">
           <v-card flat >
             <h2 class="countdown text-center">349 +</h2>
             <v-card-text class="text-center">businesses now have thier place on Internet</v-card-text>
           </v-card>
         </v-col>
-        <v-col md="4">
+        <v-col md="4" sm="12" cols="12" xs="12">
           <v-card flat >
             <h2 class="countdown text-center">113 +</h2>
             <v-card-text class="text-center">businesses now have their identity</v-card-text>
           </v-card>
         </v-col>
-        <v-col md="4">
+        <v-col md="4" sm="12" cols="12" xs="12">
           <v-card flat >
             <h2 class="countdown text-center">150 +</h2>
             <v-card-text class="text-center">happy clients</v-card-text>
@@ -93,14 +93,12 @@
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
 import Blurb from '~/components/Blurb.vue'
 import Heading from '~/components/Heading'
 import Testimonial from '~/components/Testimonial'
 
 export default {
   components: {
-    Logo,
     Blurb,
     Heading,
     Testimonial

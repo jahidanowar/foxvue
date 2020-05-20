@@ -1,5 +1,5 @@
 <template>
-    <v-card color="#fafafa" flat min-height="280">
+    <v-card color="bg" flat min-height="280">
         <p class="pa-5">
         <slot></slot>
         </p>
