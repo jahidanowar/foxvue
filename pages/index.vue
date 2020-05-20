@@ -171,7 +171,7 @@ export default {
 .header{
   padding: 5% 0;
   &-title{
-    font-size: 3.5rem;
+    font-size: 3rem;
     margin-bottom: 1rem;
   }
   &-description{

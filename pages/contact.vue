@@ -1,15 +1,6 @@
 <template>
   <div class="contact">
-      <v-container fluid class="bg1">
-          <v-container>
-              <v-row align="center" justify="center">
-                  <v-col cols="12">
-                      <h1 class="text-center">Let’s Talk</h1>
-                      <p class="text-center">Ready To Grow?<br>We look forward to hearing from you</p>
-                  </v-col>
-              </v-row>
-          </v-container>
-      </v-container>
+      <PageHero title="Let's Talk">Ready To Grow? <br> We look forward to hearing from you</PageHero>
       <v-container>
           <v-row>
               <v-col cols="12" md="8" sm="12" xs="12" class="mx-auto">
@@ -42,7 +33,7 @@
                         outlined
                         flat
                     ></v-textarea>
-                    <v-btn block color="primary" depressed>Submit</v-btn>
+                    <v-btn block color="primary" depressed large>Submit</v-btn>
                   </v-form>
               </v-col>
           </v-row>
@@ -51,11 +42,15 @@
 </template>
 
 <script>
+import PageHero from "~/components/PageHero"
 export default {
     data(){
         return{
             title: "Contact Us"
         }
+    },
+    components: {
+        PageHero
     }
 }
 </script>
