@@ -25,19 +25,19 @@
         <v-col md="4">
           <v-card flat >
             <h2 class="countdown text-center">349 +</h2>
-            <v-card-text class="text-center">businesses have thier place on Internet</v-card-text>
+            <v-card-text class="text-center">businesses now have thier place on Internet</v-card-text>
           </v-card>
         </v-col>
         <v-col md="4">
           <v-card flat >
             <h2 class="countdown text-center">113 +</h2>
-            <v-card-text class="text-center">businesses have thier place on Internet</v-card-text>
+            <v-card-text class="text-center">businesses now have their identity</v-card-text>
           </v-card>
         </v-col>
         <v-col md="4">
           <v-card flat >
             <h2 class="countdown text-center">150 +</h2>
-            <v-card-text class="text-center">businesses have thier place on Internet</v-card-text>
+            <v-card-text class="text-center">happy clients</v-card-text>
           </v-card>
         </v-col>
       </v-row>
@@ -76,6 +76,17 @@
      </div>
   </v-container>
   <!-- Testimonials Ends  -->
+
+  <!-- Call to action -->
+  <v-container fluid class="primary">
+    <v-container>
+      <div class="call-to-action text-center content-area">
+        <h3 class="display-1 white--text mb-10 font-weight-bold">Ready to Create The Next Big Thing?</h3>
+        <v-btn depressed large color="white" outlined tile nuxt to="/contact">Let's Start a Project</v-btn>
+      </div>
+    </v-container>
+  </v-container>
+  <!-- Call to action Ends -->
 
 
   </div>
