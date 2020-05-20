@@ -78,14 +78,7 @@
   <!-- Testimonials Ends  -->
 
   <!-- Call to action -->
-  <v-container fluid class="primary">
-    <v-container>
-      <div class="call-to-action text-center content-area">
-        <h3 class="display-1 white--text mb-10 font-weight-bold">Ready to Create The Next Big Thing?</h3>
-        <v-btn depressed large color="white" outlined tile nuxt to="/contact">Let's Start a Project</v-btn>
-      </div>
-    </v-container>
-  </v-container>
+  <CallToAction title="Ready to Create The Next Big Thing?" buttonText="Start A Project" to="/contact" />
   <!-- Call to action Ends -->
 
 
@@ -96,12 +89,14 @@
 import Blurb from '~/components/Blurb.vue'
 import Heading from '~/components/Heading'
 import Testimonial from '~/components/Testimonial'
+import CallToAction from '~/components/CallToAction'
 
 export default {
   components: {
     Blurb,
     Heading,
-    Testimonial
+    Testimonial,
+    CallToAction
   },
   data(){
     return{

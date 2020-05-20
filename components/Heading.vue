@@ -7,10 +7,11 @@
 
 <script>
 export default {
-    props:{
-        title: String,
-        height: Number
-    }
+  name: "Heading",
+  props:{
+      title: String,
+      height: Number
+  }
 }
 </script>
 

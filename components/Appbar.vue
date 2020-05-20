@@ -51,6 +51,7 @@
 
 <script>
 export default {
+    name: "AppBar",
     data(){
         return{
             drawer: false,

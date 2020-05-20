@@ -13,6 +13,7 @@
 
 <script>
 export default {
+    name: "Blurb",
     props:{
         size: String,
         title: String,

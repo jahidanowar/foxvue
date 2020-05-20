@@ -23,6 +23,7 @@
 
 <script>
 export default {
+    name: "Testimonial",
     props: {
         backgroundColor: String,
         name: String,
