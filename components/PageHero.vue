@@ -4,6 +4,7 @@
             <v-row align="center" justify="center">
                 <v-col cols="12">
                     <h1 class="text-center">{{title}}</h1>
+                    <br>
                     <p class="text-center"><slot></slot></p>
                 </v-col>
             </v-row>
