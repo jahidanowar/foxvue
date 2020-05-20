@@ -4,7 +4,7 @@
      <div class="header">
        <v-row align="center" justify="center">
          <v-col>
-           <h1 class="header-title">We Provide Result Driven Digital Solution <span class="primary--text">.</span></h1>
+           <h1 class="header-title">We Provide Result Driven Digital Solution<span class="primary--text">.</span></h1>
            <p class="header-description">We make websites for awesome business like yours. Let us help you to make your brand online . </p>
            <v-btn color="primary" large tile depressed>Learn More</v-btn>
            <v-btn color="primary" large outlined tile class="ml-3">Let's Talk</v-btn>
@@ -15,7 +15,7 @@
        </v-row>
      </div>
      <div class="content-area">
-       <Heading title="What We Do ?" height="5" />
+       <Heading title="What We Do ?" height=5 />
        <v-row>
          <v-col cols="12" md="6" sm="12" xs="12" v-for="service in services" :key="service.title">
            <Blurb size="100" :title="service.title" :description="service.description" :image="service.image" />
