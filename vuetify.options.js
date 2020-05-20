@@ -10,6 +10,7 @@ export default {
         accent: '#8c9eff',
         error: '#b71c1c',
         bg: '#fff',
+        bg1:"#f7f8fb",
         textcolor: '#333',
       },
       dark: {

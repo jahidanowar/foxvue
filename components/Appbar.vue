@@ -17,12 +17,12 @@
 
             <v-spacer></v-spacer>
 
-            <v-toolbar-items class="hidden-xs-only">
+            <div class="hidden-xs-only">
                 <v-btn nuxt to="/about" text>About</v-btn>
                 <v-btn nuxt to="/our-works" text>Works</v-btn>
                 <v-btn nuxt to="/services" text>Service</v-btn>
                 <v-btn nuxt to="/contact" text>Contact</v-btn>
-            </v-toolbar-items>
+            </div>
 
             <v-btn text icon color="primary" class="hidden-md-and-up" @click="drawer =! drawer">
                 <v-icon>mdi-menu</v-icon>
