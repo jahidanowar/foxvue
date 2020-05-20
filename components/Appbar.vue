@@ -18,10 +18,10 @@
             <v-spacer></v-spacer>
 
             <v-toolbar-items>
-                <v-btn to="/about" text>About</v-btn>
-                <v-btn to="/our-works" text>Works</v-btn>
-                <v-btn to="/services" text>Service</v-btn>
-                <v-btn to="/contact" text>Contact</v-btn>
+                <v-btn nuxt to="/about" text>About</v-btn>
+                <v-btn nuxt to="/our-works" text>Works</v-btn>
+                <v-btn nuxt to="/services" text>Service</v-btn>
+                <v-btn nuxt to="/contact" text>Contact</v-btn>
             </v-toolbar-items>
 
         </v-app-bar>

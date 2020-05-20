@@ -1,7 +1,7 @@
 <template>
     <div class="content-area-title text-center">
         <hr class="divider" :style="{'margin-bottom': height + 'px'}">
-        <h2>What We Do ?</h2>
+        <h2>{{title}}</h2>
     </div>
 </template>
 

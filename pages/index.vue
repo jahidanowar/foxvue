@@ -1,12 +1,11 @@
 <template>
-
-<<<<<<< HEAD
-  <div>
+<div>
+  <!-- Hero Area Starts -->
   <v-container>
     <div class="header">
       <v-row align="center" justify="center">
         <v-col>
-          <h1 class="header-title">We Provide Result Driven Digital Solution <span class="primary--text">.</span></h1>
+          <h1 class="header-title">We Provide Result Driven Digital Solution<span class="primary--text">.</span></h1>
           <p class="header-description">We make websites for awesome business like yours. Let us help you to make your brand online . </p>
           <v-btn color="primary" large tile depressed>Learn More</v-btn>
           <v-btn color="primary" large outlined tile class="ml-3">Let's Talk</v-btn>
@@ -17,7 +16,9 @@
       </v-row>
     </div>
   </v-container>
-  
+  <!-- Hero Area Ends -->
+
+  <!-- Counter -->
   <v-container fluid class="primary">
     <v-container>
       <v-row>
@@ -40,45 +41,38 @@
           </v-card>
         </v-col>
       </v-row>
-=======
-   <v-container>
-     <div class="header">
-       <v-row align="center" justify="center">
-         <v-col>
-           <h1 class="header-title">We Provide Result Driven Digital Solution<span class="primary--text">.</span></h1>
-           <p class="header-description">We make websites for awesome business like yours. Let us help you to make your brand online . </p>
-           <v-btn color="primary" large tile depressed>Learn More</v-btn>
-           <v-btn color="primary" large outlined tile class="ml-3">Let's Talk</v-btn>
-         </v-col>
-         <v-col align="center">
-           <v-img src="https://foxflue.com/wp-content/uploads/2020/03/foxflue-web-design-illustration.png" max-width="400"></v-img>
-         </v-col>
-       </v-row>
-     </div>
-     <div class="content-area">
-       <Heading title="What We Do ?" height=5 />
+    </v-container>
+  </v-container>
+  <!-- Counter Ends  -->
+
+  <!-- Service Area  -->
+  <v-container>
+    <div class="content-area">
+       <Heading title="What We Do ?" :height="5" />
        <v-row>
          <v-col cols="12" md="6" sm="12" xs="12" v-for="service in services" :key="service.title">
            <Blurb size="100" :title="service.title" :description="service.description" :image="service.image" />
          </v-col>
        </v-row>
      </div>
->>>>>>> c715dab9abf384424572e96dc28a6e398f260d9d
-    </v-container>
   </v-container>
+  <!-- Service Area Ends  -->
 
+  <!-- Testimonials  -->
   <v-container>
     <div class="content-area">
-      <div class="content-area-title text-center">
-        <hr class="divider">
-        <h2>What We Do ?</h2>
-      </div>
-    </div>
+       <Heading title="What Clients Say About Us" :height="5" />
+       <v-row>
+         <v-col cols="12" md="4" sm="6">
+           
+         </v-col>
+       </v-row>
+     </div>
   </v-container>
+  <!-- Testimonials Ends  -->
+
 
   </div>
-    
-
 </template>
 
 <script>
@@ -118,7 +112,24 @@ export default {
           description: "By blending aesthetics and functionality our Foxflue Team and iOS and Android app development team creates mobile applications that stand out in the competitive mobile space."
         },
 
-      ]
+      ],
+      testimonials: [
+        {
+          name: "Jaideep Hinduja",
+          designation: "Director, SimexT",
+          review: "",
+        },
+        {
+          name: "Jaideep Hinduja",
+          designation: "Director, SimexT",
+          review: "",
+        },
+        {
+          name: "Jaideep Hinduja",
+          designation: "Director, SimexT",
+          review: "",
+        }
+      ],
     }
   },
   head(){
