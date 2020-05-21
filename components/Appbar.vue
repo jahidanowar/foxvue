@@ -35,12 +35,13 @@
                 v-for="item in items"
                 :key="item.title"
                 link
+                :to="item.to" nuxt
                 >
                 <!-- <v-list-item-icon>
                     <v-icon>{{ item.icon }}</v-icon>
                 </v-list-item-icon> -->
 
-                <v-list-item-content :to="item.to" nuxt>
+                <v-list-item-content>
                     <v-list-item-title class="text-center">{{ item.title }}</v-list-item-title>
                 </v-list-item-content>
                 </v-list-item>
