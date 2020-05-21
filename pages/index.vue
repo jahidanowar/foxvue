@@ -7,8 +7,8 @@
         <v-col>
           <h1 class="header-title">We Provide Result Driven Digital Solution<span class="primary--text">.</span></h1>
           <p class="header-description">We make websites for awesome business like yours. Let us help you to make your brand online . </p>
-          <v-btn color="primary" large tile depressed>Learn More</v-btn>
-          <v-btn color="primary" large outlined tile class="ml-3">Let's Talk</v-btn>
+          <v-btn color="primary" large tile depressed to="/about" nuxt>Learn More</v-btn>
+          <v-btn color="primary" large outlined tile class="ml-3" to="/contact" nuxt>Let's Talk</v-btn>
         </v-col>
         <v-col align="center">
           <v-img src="https://foxflue.com/wp-content/uploads/2020/03/foxflue-web-design-illustration.png" max-width="400"></v-img>
