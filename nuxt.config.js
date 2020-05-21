@@ -1,6 +1,7 @@
 
 export default {
   mode: 'universal',
+  fallback: true,
   /*
   ** Headers of the page
   */
