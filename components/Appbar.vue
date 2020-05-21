@@ -40,7 +40,7 @@
                     <v-icon>{{ item.icon }}</v-icon>
                 </v-list-item-icon> -->
 
-                <v-list-item-content>
+                <v-list-item-content :to="item.to" nuxt>
                     <v-list-item-title class="text-center">{{ item.title }}</v-list-item-title>
                 </v-list-item-content>
                 </v-list-item>
@@ -56,10 +56,10 @@ export default {
         return{
             drawer: false,
             items:[
-                { title: 'About Us', icon: 'gavel' },
-                { title: 'Services', icon: 'dashboard' },
-                { title: 'Our Works', icon: 'account_box' },
-                { title: 'Contact', icon: 'gavel' },
+                { title: 'About Us', to: '/about' },
+                { title: 'Services', to: '/services' },
+                { title: 'Our Works', to: '/our-works' },
+                { title: 'Contact', to: '/contact' },
             ]
         }
     }
