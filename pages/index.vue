@@ -19,7 +19,7 @@
   <!-- Hero Area Ends -->
 
   <!-- Counter -->
-  <v-container fluid class="primary">
+  <v-container fluid class="accent">
     <v-container>
       <v-row>
         <v-col md="4" sm="12" cols="12" xs="12">

@@ -8,7 +8,7 @@
             <nuxt-link to="/">
             <v-toolbar-title>
                 <v-img 
-                src="https://foxflue.com/wp-content/uploads/2020/03/foxflue-logo.png"
+                :src="logoImg"
                 width="150"
                     >  
                 </v-img>
@@ -59,6 +59,7 @@ export default {
     data(){
         return{
             modeIcon: "mdi-weather-night",
+            logoImg: "https://foxflue.com/wp-content/uploads/2020/03/foxflue-logo.png",
             drawer: false,
             items:[
                 { title: 'About Us', to: '/about' },
@@ -72,6 +73,7 @@ export default {
         toogleMode(){
             this.$vuetify.theme.dark = ! this.$vuetify.theme.dark
             this.modeIcon = this.$vuetify.theme.dark ? "mdi-weather-sunny" : "mdi-weather-night"
+            this.logoImg = this.$vuetify.theme.dark ? "https://i.ibb.co/WVW3rxD/foxflue-logo-light.png" : "https://foxflue.com/wp-content/uploads/2020/03/foxflue-logo.png"
         }
     }
 }

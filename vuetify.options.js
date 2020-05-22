@@ -7,7 +7,7 @@ export default {
       light: {
         primary: '#F68C1C',
         secondary: '#b0bec5',
-        accent: '#8c9eff',
+        accent: '#F68C1C',
         error: '#b71c1c',
         bg: '#fff',
         bg1:"#f7f8fb",
@@ -16,9 +16,10 @@ export default {
       dark: {
         primary: '#F68C1C',
         secondary: '#b0bec5',
-        accent: '#8c9eff',
+        accent: '#121212',
         error: '#b71c1c',
-        bg: '#333',
+        bg: '#121212',
+        bg1: "#1e1e1e"
       },
     },
     
