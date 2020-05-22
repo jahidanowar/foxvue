@@ -11,6 +11,7 @@
                         solo
                         flat
                         outlined
+                        dense
                     ></v-text-field>
                     <v-text-field
                         name="email"
@@ -18,6 +19,7 @@
                         solo
                         flat
                         outlined
+                        dense
                     ></v-text-field>
                     <v-text-field
                         name="phone"
@@ -25,6 +27,7 @@
                         solo
                         flat
                         outlined
+                        dense
                     ></v-text-field>
                     <v-textarea
                         label="Your Requirements or Message"
@@ -33,7 +36,7 @@
                         outlined
                         flat
                     ></v-textarea>
-                    <v-btn block color="primary" depressed large>Submit</v-btn>
+                    <v-btn block color="primary" depressed large :loading="progress" @click="progress =! progress">Submit</v-btn>
                   </v-form>
               </v-col>
           </v-row>
@@ -46,11 +49,19 @@ import PageHero from "~/components/PageHero"
 export default {
     data(){
         return{
-            title: "Contact Us"
+            title: "Contact Us",
+            progress: false
         }
     },
     components: {
         PageHero
+    },
+    watch: {
+        progress(){
+            setTimeout(() => {
+                this.progress = false
+            }, 1000);
+        }
     }
 }
 </script>

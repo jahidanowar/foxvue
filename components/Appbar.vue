@@ -23,6 +23,9 @@
                 <v-btn nuxt to="/services" text>Service</v-btn>
                 <v-btn nuxt to="/contact" text>Contact</v-btn>
             </div>
+            <div class="tool">
+                <v-btn icon @click="toogleMode"><v-icon>{{modeIcon}}</v-icon></v-btn>
+            </div>
 
             <v-btn text icon color="primary" class="hidden-md-and-up" @click="drawer =! drawer">
                 <v-icon>mdi-menu</v-icon>
@@ -55,6 +58,7 @@ export default {
     name: "AppBar",
     data(){
         return{
+            modeIcon: "mdi-weather-night",
             drawer: false,
             items:[
                 { title: 'About Us', to: '/about' },
@@ -62,6 +66,12 @@ export default {
                 { title: 'Our Works', to: '/our-works' },
                 { title: 'Contact', to: '/contact' },
             ]
+        }
+    },
+    methods: {
+        toogleMode(){
+            this.$vuetify.theme.dark = ! this.$vuetify.theme.dark
+            this.modeIcon = this.$vuetify.theme.dark ? "mdi-weather-sunny" : "mdi-weather-night"
         }
     }
 }
