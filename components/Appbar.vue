@@ -1,8 +1,8 @@
 <template>
     <v-container>     
-    <v-app-bar
-    color="bg"
-    flat
+        <v-app-bar
+        color="bg"
+        flat
         >
         
             <nuxt-link to="/">
